@@ -20,6 +20,8 @@
         },
       }
     </script>
+    <!-- 1. Add Babel for in-browser JSX/TSX transpilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script type="importmap">
 {
@@ -33,6 +35,7 @@
 </head>
   <body class="bg-slate-50 antialiased">
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <!-- 2. Change script type to text/babel and fix the path to be relative -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
   </body>
 </html>

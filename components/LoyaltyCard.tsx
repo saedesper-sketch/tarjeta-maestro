@@ -1,8 +1,8 @@
 
 import React from 'react';
-import { TIERS } from '../constants';
-import { TierName, Visit } from '../types';
-import { CheckIcon } from './icons/CheckIcon';
+import { TIERS } from '../constants.ts';
+import { TierName, Visit } from '../types.ts';
+import { CheckIcon } from './icons/CheckIcon.tsx';
 
 interface LoyaltyCardProps {
   tierName: TierName;

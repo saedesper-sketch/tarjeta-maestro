@@ -1,5 +1,5 @@
 
-import { Tier, TierName } from './types';
+import { Tier, TierName } from './types.ts';
 
 export const TIERS: Record<TierName, Tier> = {
   [TierName.BRONZE]: {

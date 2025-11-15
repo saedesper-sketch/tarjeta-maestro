@@ -1,10 +1,11 @@
+
 import React, { useState } from 'react';
-import { User, Visit, Reward } from '../types';
-import { getUserByEmail, getUserById, updateUser } from '../services/db';
-import LoyaltyCard from './LoyaltyCard';
-import { TIERS, ADMIN_EMAIL } from '../constants';
-import { BarcodeIcon } from './icons/BarcodeIcon';
-import { UserIcon } from './icons/UserIcon';
+import { User, Visit, Reward } from '../types.ts';
+import { getUserByEmail, getUserById, updateUser } from '../services/db.ts';
+import LoyaltyCard from './LoyaltyCard.tsx';
+import { TIERS, ADMIN_EMAIL } from '../constants.ts';
+import { BarcodeIcon } from './icons/BarcodeIcon.tsx';
+import { UserIcon } from './icons/UserIcon.tsx';
 
 interface AdminDashboardProps {
   onLogout: () => void;

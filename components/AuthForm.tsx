@@ -1,10 +1,11 @@
+
 import React, { useState } from 'react';
-import { User, TierName } from '../types';
-import { createUser, getUserByEmail } from '../services/db';
-import { EyeIcon } from './icons/EyeIcon';
-import { EyeSlashIcon } from './icons/EyeSlashIcon';
-import { UserIcon } from './icons/UserIcon';
-import { LockIcon } from './icons/LockIcon';
+import { User, TierName } from '../types.ts';
+import { createUser, getUserByEmail } from '../services/db.ts';
+import { EyeIcon } from './icons/EyeIcon.tsx';
+import { EyeSlashIcon } from './icons/EyeSlashIcon.tsx';
+import { UserIcon } from './icons/UserIcon.tsx';
+import { LockIcon } from './icons/LockIcon.tsx';
 
 interface AuthFormProps {
   onLoginSuccess: (user: User) => void;

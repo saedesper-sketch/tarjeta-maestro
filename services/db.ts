@@ -1,5 +1,6 @@
-import { User } from '../types';
-import { supabase } from './supabase';
+
+import { User } from '../types.ts';
+import { supabase } from './supabase.ts';
 
 export const getUserByEmail = async (email: string): Promise<User | null> => {
   const { data, error } = await supabase
@@ -53,10 +54,11 @@ export const createUser = async (user: User): Promise<User | null> => {
 };
 
 export const updateUser = async (user: User): Promise<User | null> => {
+    const { id, ...updateData } = user; // Destructure to separate id from the rest of the data
     const { data, error } = await supabase
     .from('users')
-    .update(user)
-    .eq('id', user.id)
+    .update(updateData) // Only pass the data that should be updated
+    .eq('id', id)
     .select()
     .single();
 

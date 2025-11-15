@@ -1,8 +1,8 @@
 
 import React from 'react';
-import { User } from '../types';
-import Barcode from './Barcode';
-import LoyaltyCard from './LoyaltyCard';
+import { User } from '../types.ts';
+import Barcode from './Barcode.tsx';
+import LoyaltyCard from './LoyaltyCard.tsx';
 
 interface UserDashboardProps {
   user: User;

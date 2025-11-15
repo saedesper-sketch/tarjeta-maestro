@@ -1,0 +1,5 @@
+{
+  "name": "Loyalty Stamp",
+  "description": "A digital loyalty card application for businesses. Customers collect stamps for their visits and earn rewards, while admins can manage customer progress. The app features a tiered loyalty system (Bronze, Silver, Gold) to incentivize repeat business.",
+  "requestFramePermissions": []
+}
